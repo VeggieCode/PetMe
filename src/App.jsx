@@ -7,6 +7,7 @@ import MenuCabecera from './components/MenuCabecera';
 import MenuLateral from './components/MenuLateral';
 import Login from './pages/Login';
 import Registro from './pages/Registro';
+import Inicio from './pages/Inicio';
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
         <Switch>
           <Route exact path="/login"><Login layoutPosition="main"/></Route>
           <Route exact path="/signup"><Registro layoutPosition="main"></Registro></Route>
-          <Route exact path="/"/>
+          <Route exact path="/" component={Inicio}/>
         </Switch>
       </Router>
     </div>
